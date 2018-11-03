@@ -20,7 +20,7 @@ The code is a slightly modified from of code provided by Udacity in their Deep R
 3. Create and activate a new conda environment
 ```
 conda create -n p1_banana python=3.6
-source activate p1_banana
+conda activate p1_banana
 ```
 3. Clone this GitHub repository
 ```
@@ -63,7 +63,7 @@ python train.py -banana_env_path Banana.app -dqn_chck_pt_path dqn_model_weights.
 The model weights are saved in the file specified by dqn_chck_pt_path.  Currently there is no mechanism to recreate the model from these parameters.
 When you are done, deactivate the conda environment:
 ```
-source activate p1_banana
+conda deactivate
 ```
 ### Note
 The whole procedure above has only been tested on Mac OS X El Capitan.
