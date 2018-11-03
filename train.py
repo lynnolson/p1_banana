@@ -96,7 +96,7 @@ if __name__ == '__main__':
     opt = parser.parse_args()
 
     # Load the environment for collecting bananas.
-    env = UnityEnvironment(file_name='banana_env_path')
+    env = UnityEnvironment(file_name=opt.banana_env_path)
     
     # Get the default brain
     brain_name = env.brain_names[0]
